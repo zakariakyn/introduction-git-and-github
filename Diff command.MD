@@ -24,7 +24,7 @@ console.log("ziko")
 **reverseword2.js**
 ```javascript
 function reversew(word){
-# trim() function for remove space
+// trim() function for remove space
 word = word.trim()
 let = result
 for ( let i = wold.length -1 ; i >= 0 ; i--){
