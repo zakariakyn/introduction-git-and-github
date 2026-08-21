@@ -6,9 +6,8 @@ After we get the file of changes using the command `diff -u`, we can apply these
 
 The basic syntax is:
 ```bash
-patch <project_file> < <changes_file>
+patch project_file < changes_file
 ```
-*(Note: Always use `<` to read from the patch file. Using `>` will overwrite it!)*
 
 ### Applying a Patch
 
