@@ -51,3 +51,7 @@ To verify that `reverseword1.js` is back to its previous version, you can run th
      console.log("ziko")
 \ No newline at end of file
 ```
+
+## Resources 
+* [Coursera: Practical Application of diff and patch](https://www.coursera.org/learn/introduction-git-github/lecture/IkuqC/practical-application-of-diff-and-patch)
+* [YouTube Resource](https://youtu.be/r9N-BOWWr-k)
