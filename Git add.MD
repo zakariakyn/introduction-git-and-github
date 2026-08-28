@@ -19,11 +19,21 @@ git add filename
 ```
 
 ## Add all files
-
+`git add .` stages all files while respecting `.gitignore`.
+`.gitignore` is a file maintained by the user to ignore certain files (system files, API keys, passwords, etc.)
 ```bash
 git add .
 ```
 
+`git add *` stages all files but **ignores** `.gitignore` rules.
+```bash
+git add *
+```
+
+If a file is ignored by `.gitignore` and you still need to add it, force it:
+```bash
+git add -f filename
+```
 ## Add changes interactively — `git add -p`
 
 `-p` stands for **patch**. Instead of staging a whole file at once, it lets you review and choose which **parts (hunks)** of the changes to stage — useful when you changed several things in one file but want to split them into separate commits.
@@ -40,6 +50,7 @@ Stage this hunk [y,n,q,a,d,s,e,?]?
 | `n` | No, skip it |
 | `s` | Split into smaller hunks |
 | `q` | Quit |
+
 
 ## What happens next
 
