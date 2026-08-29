@@ -1,0 +1,37 @@
+# The `git commit` command
+
+## Definition
+After adding files to the staging area, the next step is to save them as a **snapshot** using `git commit`. A commit is a snapshot of the project at that point in time.
+
+## Key terms
+| Term | Meaning |
+|---|---|
+| Commit | A snapshot of the entire project state at a point in time, along with metadata |
+| Commit files | The files that were modified |
+| Commit message | Explains what changes were made |
+
+## Basic commit
+```bash
+git commit -m "Your message"
+```
+
+## Large changes
+If you have large or multiple changes, you can skip `-m` and let Git open a text editor to write a more detailed message:
+```bash
+git commit
+```
+
+## Skip the staging area
+Sometimes you can skip the staging area and commit directly:
+```bash
+git commit -a -m "Your message"
+```
+`-a` automatically stages all **tracked** files (equivalent to running `git add` on them first) before committing.
+
+⚠️ **Note:** `-a` only works on files Git already tracks. It will **not** include untracked (new) files — those still need `git add` first.
+
+## Empty commit
+Sometimes you need to create a snapshot with no actual changes — for example, to trigger a CI/CD pipeline, mark a milestone, or test automation:
+```bash
+git commit --allow-empty -m "Your message"
+```
