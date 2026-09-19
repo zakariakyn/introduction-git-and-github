@@ -33,3 +33,12 @@ Then merge the feature branch into it:
 ```bash
 git merge feature
 ```
+
+Handling Conflicts
+
+If both branches modify the same lines of code, Git pauses the merge and flags a merge conflict.
+
+To cancel the merge and return your branch to its state before git merge was run:
+```bash
+git merge --abort
+```
